@@ -509,6 +509,7 @@ section.gallery {
     height: 300px;
     background-size: cover;
     background-position: center;
+    cursor: default;
 }
 
 .thumb-1 .image {
@@ -605,24 +606,25 @@ section.intro {
 }
 
 .intro-image {
-    background-image: url('../content/img/emil.jpg');
+    background-image: url('../content/img/esittely.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 400px;
+    width: 100%;
     border-radius: 4px;
-    height: calc(400px * 5/4);
+    height: auto;
+    aspect-ratio: 1024/683;
 }
 
 @media (max-width: 768px) {
 
     .intro-wrapper {
-        padding: 50px 30px;
+        padding: 50px 20px;
         flex-direction: column;
     }
 
     .intro-image-container {
-        width: 70%;
+        width: 100vw;
         margin: 0 0 20px;
     }
 
@@ -631,7 +633,7 @@ section.intro {
     }
 
     .intro-image {
-        height: 300px;
+        border-radius: 0;
     }
 }
 

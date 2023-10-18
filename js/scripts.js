@@ -9,7 +9,7 @@ const image = {
   init: function () {
     this.capture();
     this.slider();
-    this.emailjs();
+    /* this.emailjs(); */
   },
 
   capture: function () {
